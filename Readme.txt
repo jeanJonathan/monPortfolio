@@ -1,6 +1,8 @@
-Thanks for downloading this template!
+# Bonjour, je suis Jean-Jonathan KOFFI! 👋
 
-Template Name: Personal
-Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+## 📚 Étudiant Développeur | Passion Big Data | Amoureux du Code
+
+Je forge mon chemin dans le monde numérique avec un BUT en informatique de l'IUT Bayonne, spécialisé dans la **création d'applications**. 
+En alternance chez OceanAdventure, je mets en pratique mes connaissances en travaillant sur des applications web et mobile.
+🌊 🕵️‍♂️
+
