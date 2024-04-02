@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>demarche Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/css/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <!-- =======================================================
+  * Name: jean-jonathan
+  * Updated: March 01 2024 with Bootstrap v5.3.2
+  * Author: jean-jonathan koffi
+  ======================================================== -->
+</head>
+
+<body>
+      <!-- ======= Section Contact ======= -->
+<section id="contact" class="contact">
+<div id="typewriter"></div>
+    <a href="demarche.pdf" download="demarche Explicative portfolio" id="downloadLink" style="display:none; color: white; font-family: 'Courier New', monospace; background-color: #18d26e; padding: 10px; text-decoration: none; border-radius: 5px; margin-top: 20px;">Télécharger la suite</a>
+   </div>
+<div class="credits">
+  <a href="demarche.pdf" download="demarche Explicative portfolio" style="color: white; font-family: 'Courier New', monospace; background-color: #18d26e; padding: 10px; text-decoration: none; border-radius: 5px; margin-right: 20px;">Télécharger la suite</a> retour <a href="index.html">acceuil</a>
+</div>
+</section><!-- Fin Section Contact -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script>
+  class Star {
+    constructor() {
+      this.x = random(-width, width);
+      this.y = random(-height, height);
+      this.size = random(0.5, 3);
+      this.speed = random(1, 5);
+    }
+
+    move() {
+      this.x += this.speed;
+      this.y += this.speed * (height / width);
+      if (this.x > width || this.y > height) {
+        this.x = random(-width, width);
+        this.y = random(-height, height);
+      }
+    }
+
+    show() {
+      noStroke();
+      fill(255);
+      ellipse(this.x, this.y, this.size, this.size);
+    }
+  }
+
+  let stars = [];
+
+  function setup() {
+    createCanvas(windowWidth, windowHeight);
+    for (let i = 0; i < 100; i++) {
+      stars.push(new Star());
+    }
+    const fullText = `Dans l'intention de poursuivre mes etudes par un master en informatique par alternance, je présente ce portfolio comme une synthèse exhaustive de mon parcours académique et professionnel jusqu'à présent. Mon objectif est de communiquer de manière claire et concise les compétences et expériences que j'ai acquises. À travers ce portfolio, je mets en avant des projets personnels, professionnels et éducatifs sélectionnés pour refléter non seulement mes capacités à résoudre des problèmes, mais aussi ma volonté de contribuer activement au domaine de l'informatique. Ce portfolio illustre un ensemble de compétences techniques acquises, allant du développement backend au développement frontend, en passant par l'utilisation de divers outils et frameworks... Il met en lien des projets réalisés depuis ma première année de BUT en informatique jusqu’à maintenant, avec quelques traces de ces projets sous forme de code et d’image en présentant un accès direct à mon GitHub....`;
+typeWriter(fullText, 0, function() {
+    //document.getElementById('downloadLink').style.display = 'inline-block'; // Affiche le bouton après l'animation
+});
+  }
+  function draw() {
+    background(0);
+    stars.forEach(star => {
+      star.move();
+      star.show();
+    });
+  }
+
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+
+  function typeWriter(text, i, callback) {
+if (i < text.length) {
+    document.getElementById('typewriter').innerHTML += text.charAt(i);
+    i++;
+    setTimeout(function() {
+        typeWriter(text, i, callback);
+    }, 50); // pour ajuster le délai pour changer la vitesse de "frappe"
+} else if (callback) {
+    callback();
+}
+}
+</script>
+<style>
+  body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* Arrière-plan noir pour les étoiles */
+  }
+
+  #typewriter {
+      color: white;
+      font-size: 20px; 
+      font-family: 'Courier New', monospace;
+      text-align: justify;
+      white-space: pre-wrap; /* Pour conserver les sauts de ligne et les espaces dans votre texte */
+      width: 80%; 
+      max-width: 600px; 
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10; /* pour s'assurer que le texte est au-dessus de l'animation */
+  }
+  
+section .container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  section {
+    top: 120px;
+  }
+
+  section.section-show {
+    top: 80px;
+  }
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #4ceb95;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999;
+}
+
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.credits a {
+  color: #18d26e;
+  transition: 0.3s;
+}
+
+.credits a:hover {
+  color: #fff;
+}
+</style>
+</html>
