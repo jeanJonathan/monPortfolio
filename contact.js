@@ -44,14 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       })
       .catch(function (error) {
-
-        // Erreur
         loading.style.display = "none";
-        errorMessage.innerHTML = "Erreur lors de l'envoi. Réessayez.";
+        errorMessage.innerHTML = "Erreur lors de l'envoi.";
 
-        console.error("EmailJS Error:", error);
-
-      });
+        console.log("FULL ERROR:", error);
+        });
 
   });
 
