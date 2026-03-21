@@ -1,12 +1,8 @@
 // ================= EMAILJS CONFIG =================
 
-// Initialisation EmailJS
 (function () {
   emailjs.init("9sb09pm0-9fkbfVyH");
 })();
-
-
-// ================= FORM HANDLER =================
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -18,12 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // Reset messages
     errorMessage.innerHTML = "";
     successMessage.style.display = "none";
     loading.style.display = "block";
 
-    // Récupération des données
     const formData = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
@@ -31,24 +25,29 @@ document.addEventListener("DOMContentLoaded", function () {
       message: document.querySelector("textarea[name='message']").value
     };
 
-    // ================= ENVOI EMAIL =================
-
+    // Mail vers moi
     emailjs.send("service_btylw54", "template_gaq5alh", formData)
       .then(function () {
 
-        // Succès
+        // Auto-reply vers utilisateur
+        return emailjs.send("service_btylw54", "template_zdtmfrw", formData);
+
+      })
+      .then(function () {
+
+        // Succès global
         loading.style.display = "none";
         successMessage.style.display = "block";
-
         form.reset();
 
       })
       .catch(function (error) {
+
         loading.style.display = "none";
         errorMessage.innerHTML = "Erreur lors de l'envoi.";
+        console.error("EmailJS Error:", error);
 
-        console.log("FULL ERROR:", error);
-        });
+      });
 
   });
 
