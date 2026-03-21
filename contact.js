@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ================= ENVOI EMAIL =================
 
-    emailjs.send("service_fkbn928", "template_gaq5alh", formData)
+    emailjs.send("service_btylw54", "template_gaq5alh", formData)
       .then(function () {
 
         // Succès
