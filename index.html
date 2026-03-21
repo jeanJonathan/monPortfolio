@@ -38,7 +38,8 @@
 
   gtag('config', 'G-66PNQX6ZJW');
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="contact.js"></script>
   <!-- =======================================================
   * Name: jean-jonathan
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -87,7 +88,7 @@
 
   <div class="section-title">
     <h2>À propos</h2>
-    <p>Savoir plus sur moi</p>
+    <!--<p>Savoir plus sur moi</p> -->
   </div>
 
   <div class="row">
@@ -95,10 +96,10 @@
       <img src="assets/img/profile.png" class="img-fluid" alt="Description de l'image">
     </div>
     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-    <h3>Étudiant en Master – Ingénierie Logicielle & Données | Master SIGLIS</h3>
+    <h3>Étudiant en Master – Ingénierie Logicielle & Données </h3>
     <p class="fst-italic">
         En fin de cycle de master en alternance, je me dirige vers une pleine insertion professionnelle
-        dans le domaine de la data et des systèmes d’information appliqués aux environnements industriels.
+        dans le domaine de la data et des systèmes d’information.
     </p>
     <div class="row">
         <div class="col-lg-6">
@@ -136,7 +137,7 @@
       <div class="count-box">
         <i class="bi bi-clock-history"></i>
         <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="2" class="purecounter"></span>
-        <p>Projets en entreprise</p>
+        <p>Projets réalisés en entreprise</p>
       </div>
     </div>
   
@@ -690,14 +691,14 @@
 
       <div class="section-title">
   <h2>Parcours</h2>
-  <p>Formation & Expérience</p>
+  <p>Formations & Expériences</p>
 </div>
 
 <div class="row">
 
   <!-- ================= FORMATION ================= -->
   <div class="col-lg-6">
-    <h3 class="resume-title">Formation</h3>
+    <h3 class="resume-title">Formations</h3>
 
     <!-- MASTER 2 -->
     <div class="resume-item">
@@ -751,7 +752,7 @@
 
   <!-- ================= EXPERIENCE ================= -->
   <div class="col-lg-6">
-    <h3 class="resume-title">Expérience Professionnelle</h3>
+    <h3 class="resume-title">Expériences Professionnelles</h3>
 
     <!-- SAFRAN -->
     <div class="resume-item">
@@ -811,57 +812,137 @@
   <!-- ======= Projects Section ======= -->
   <section id="services" class="services">
     <div class="container">
+
       <div class="section-title">
-        <h2>Projets</h2>
-        <p>Mes Projets (IUT)</p>
-      </div>      
+        <h2>Quelques Projets</h2>
+      </div>
+
       <div class="row">
+
+        <!-- ===================== PROJETS ===================== -->
+
+        <!-- Smart Dive Computer -->
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><a href="https://docs.flutter.dev/" target="_blank"><i class="devicon-flutter-plain"></i></a></div>
-            <h4><a href="https://github.com/jeanJonathan/notebook_progress" target="_blank">notebook_progress</a></h4>
-            <p>Application Flutter pour les adeptes de surf, kitesurf et wingfoil. Permet un suivi personnalisé des progrès via un cahier de progression. Développée chez Ocean Adventure pour booster l'engagement.</p>
-          </div>
-        </div>             
-        <!-- systemeSolaire en JavaScript -->
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><a href="https://www.w3schools.com/js/default.asp/" target="_blank"><i class="bx bxl-javascript"></i></a></div>
-            <h4><a href="https://github.com/jeanJonathan/systemeSolaire">systemeSolaire</a></h4>
-            <p>Développement avancé en Three.js pour une modélisation à l'échelle du système solaire. Implémentation d'algorithmes d'ombrage sophistiqués pour un rendu réaliste, optimisation de la performance 3D et interactivité utilisateur.</p>
+            <div class="icon">
+              <a href="https://www.python.org/" target="_blank">
+                <i class="devicon-python-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/Projet-Smart-Dive-Computer-SDC-" target="_blank">Smart Dive Computer</a></h4>
+            <p>Système embarqué basé sur Raspberry Pi avec capteurs (pression, GPS, température) et algorithmes de décompression en temps réel.</p>
           </div>
         </div>
-            
-        <!-- cahier_progression_web en PHP -->
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+
+        <!-- Notebook Progress -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><a href="https://laravel.com/docs/10.x/readme/" target="_blank"><i class="devicon-laravel-plain"></i></a></div>
-            <h4><a href="https://github.com/jeanJonathan/cahier_progression_web">cahier_progression_web</a></h4>
-            <p>Projet de stage en Laravel pour un cahier de progression dans les sports nautiques.</p>
-          </div>
-        </div>        
-    
-        <!-- PokeBagarre-1 en Java -->
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><a href="https://www.w3schools.com/js/default.asp/" target="_blank"><i class="bx bxl-java"></i></a></div>
-            <h4><a href="https://github.com/jeanJonathan/PokeBagarre-1">PokeBagarre-1</a></h4>
-            <p>Projet Java simulant des combats entre Pokémons, avec mise en œuvre de tests unitaires et d'intégration via JUnit et SonarQube pour assurer la qualité du code.</p>
-          </div>
-        </div>        
-    
-        <!-- API de mesure d'énergie de processus PID en C et Shell -->
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><a href="https://koor.fr/Java/Tutorial/java_javadoc_introduction.wp/" target="_blank"><i class="devicon-c-plain"></i><i class="devicon-shell-plain"></i></a></div>
-            <h4><a href="https://github.com/jeanJonathan/saeDomolande">API de mesure d'énergie de processus PID</a></h4>
-            <p>Développement d'une API pour calculer l'énergie des processus PID dans des microservices en environnement distribué.</p>
+            <div class="icon">
+              <a href="https://docs.flutter.dev/" target="_blank">
+                <i class="devicon-flutter-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/notebook_progress" target="_blank">Notebook Progress</a></h4>
+            <p>Application mobile Flutter pour le suivi de progression en sports nautiques avec Firebase et recommandations personnalisées.</p>
           </div>
         </div>
+
+        <!-- Framework Express -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://nodejs.org/" target="_blank">
+                <i class="devicon-nodejs-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/FrameworkWebProjetExpress" target="_blank">Framework Web Express</a></h4>
+            <p>Application Node.js avec API REST, CRUD, Pug et Leaflet pour gestion et visualisation de données géographiques.</p>
+          </div>
+        </div>
+
+        <!-- Analyse Industrielle -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://www.python.org/" target="_blank">
+                <i class="devicon-python-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/Analyse-Industrielle" target="_blank">Analyse Industrielle</a></h4>
+            <p>Analyse de données industrielles (Pareto, maintenance) avec Python pour aide à la décision.</p>
+          </div>
+        </div>
+
+        <!-- API Energie -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="#" target="_blank">
+                <i class="devicon-c-plain"></i>
+                <i class="devicon-shell-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/saeDomolande" target="_blank">API Mesure Énergie</a></h4>
+            <p>API en C/Shell pour analyser la consommation énergétique des processus en temps réel.</p>
+          </div>
+        </div>
+
+        <!-- Systeme Solaire -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://www.w3schools.com/js/" target="_blank">
+                <i class="bx bxl-javascript"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/systemeSolaire" target="_blank">Système Solaire 3D</a></h4>
+            <p>Simulation 3D en Three.js avec rendu réaliste et optimisation des performances.</p>
+          </div>
+        </div>
+
+        <!-- Android -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://developer.android.com/" target="_blank">
+                <i class="devicon-android-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/Application-Android-pour-gerer-les-taches" target="_blank">Task Manager Android</a></h4>
+            <p>Application mobile Android pour la gestion de tâches avec architecture propre.</p>
+          </div>
+        </div>
+
+        <!-- Java Bibliothèque -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://www.java.com/" target="_blank">
+                <i class="bx bxl-java"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/Application-de-gestion-de-bibliotheque" target="_blank">Gestion Bibliothèque</a></h4>
+            <p>Application Java avec gestion des livres et tests unitaires (JUnit).</p>
+          </div>
+        </div>
+
+        <!-- Traitement Image -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon">
+              <a href="https://www.python.org/" target="_blank">
+                <i class="devicon-python-plain"></i>
+              </a>
+            </div>
+            <h4><a href="https://github.com/jeanJonathan/traitementImage" target="_blank">Traitement Image</a></h4>
+            <p>Projet Python de traitement et transformation d’images pour analyse visuelle.</p>
+          </div>
+        </div>
+
       </div>
-    </div> 
 
     </div>
+  </section>
   </section><!-- End Projects Section -->
 
   <!-- ======= Work Section ======= -->
@@ -869,23 +950,50 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Travail</h2>
-        <p>Mon Travail</p>
+        <h2>Quelsques Insights</h2>
+        <!--<p>Mon Travail</p> -->
       </div>
       
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">Tous</li>
-            <li data-filter=".filter-app">Application mobile</li> <!---Application mobile-->
-            <li data-filter=".filter-web">Web</li> <!---Web-->
-            <li data-filter=".filter-card">Autres</li> <!--Autres-->
+            <li data-filter=".filter-bi">BI</li>
+            <li data-filter=".filter-app">App mobile</li>
+            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-card">Autres</li>
           </ul>
         </div>
       </div>
 
       <div class="row portfolio-container">
+        <!-- ================= BI PROJECT ================= -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-bi">
+          <div class="portfolio-wrap">
+            <img src="assets/img/bi.png" class="img-fluid" alt="Power BI CV">
 
+            <div class="portfolio-info">
+              <h4>CV Power BI Interactif</h4>
+              <p>Business Intelligence</p>
+
+              <div class="portfolio-links">
+                <!-- Preview image -->
+                <a href="assets/img/bi.png" 
+                  class="portfolio-lightbox" 
+                  title="CV Power BI">
+                  <i class="bx bx-plus"></i>
+                </a>
+
+                <!-- LIEN VERS TON BI -->
+                <a href="https://app.powerbi.com/view?r=TON_LIEN_ICI" 
+                  target="_blank" 
+                  title="Voir le dashboard">
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/kitesurf.png" class="img-fluid" alt="">
@@ -1140,85 +1248,119 @@
       </div>
 
     </div>
+    <style>
+      /* Uniformiser toutes les images du portfolio */
+.portfolio-wrap {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+    </style>
   </section><!-- End Work Section -->
 
-  <!-- ======= Section Contact ======= -->
+ <!-- ======= Section Contact ======= -->
 <section id="contact" class="contact">
   <div class="container">
 
     <div class="section-title">
       <h2>Contact</h2>
-      <p>Contactez-moi</p>
+      <p>Disponible pour opportunités, projets ou échanges professionnels</p>
     </div>
 
     <div class="row mt-2">
 
+      <!-- Adresse -->
       <div class="col-md-6 d-flex align-items-stretch">
         <div class="info-box">
           <i class="bx bx-map"></i>
-          <h3>Mon Adresse</h3>
-          <p>55 rue du mirambeau, Anglet, France</p>
+          <h3>Localisation</h3>
+          <p>Anglet, France</p>
         </div>
       </div>
 
+      <!-- Réseaux -->
       <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
         <div class="info-box">
           <i class="bx bx-share-alt"></i>
-          <h3>Profils Sociaux</h3>
+          <h3>Profils professionnels</h3>
           <div class="social-links">
-              <a href="https://www.linkedin.com/in/jean-jonathan-koffi-b54b1a216/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.facebook.com/jeanjonathan.koffi.1/" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/jean-jonathan-koffi-b54b1a216/" target="_blank" class="linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
           </div>
         </div>
       </div>
 
+      <!-- Email -->
       <div class="col-md-6 mt-4 d-flex align-items-stretch">
         <div class="info-box">
           <a href="mailto:jeanjonathank2@gmail.com" style="color: inherit; text-decoration: none;">
             <i class="bx bx-envelope"></i>
-            <h3>Mon Email</h3>
+            <h3>Email</h3>
             <p>jeanjonathank2@gmail.com</p>
           </a>
         </div>        
       </div>
+
+      <!-- Téléphone -->
       <div class="col-md-6 mt-4 d-flex align-items-stretch">
         <div class="info-box">
-          <a href="https://wa.me/33783747765" style="color: inherit; text-decoration: none;">
+          <a href="https://wa.me/33783747765" target="_blank" style="color: inherit; text-decoration: none;">
             <i class="bx bx-phone-call"></i>
-            <h3>Mon Numéro</h3>
-            <p>+33 07 83 74 77 65</p>
+            <h3>Téléphone</h3>
+            <p>+33 7 83 74 77 65</p>
           </a>
         </div>        
       </div>
+
     </div>
 
-    <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+    <!-- FORMULAIRE -->
+    <form id="contact-form" class="php-email-form mt-4">
+
       <div class="row">
         <div class="col-md-6 form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
         </div>
+
         <div class="col-md-6 form-group mt-3 mt-md-0">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
         </div>
       </div>
+
       <div class="form-group mt-3">
         <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
       </div>
+
       <div class="form-group mt-3">
-        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        <textarea class="form-control" name="message" rows="5" placeholder="Votre message..." required></textarea>
       </div>
+
+      <!-- STATUS -->
       <div class="my-3">
-        <div class="loading">Chargement</div>
+        <div class="loading" style="display: none;">Envoi en cours...</div>
         <div class="error-message"></div>
-        <div class="sent-message">Votre message a été envoyé. Merci !</div>
+        <div class="sent-message">Message envoyé avec succès. Je vous répondrai rapidement.</div>
       </div>
-      <div class="text-center"><button type="submit">Envoyer le Message</button></div>
+
+      <!-- CTA -->
+      <div class="text-center">
+        <button type="submit" style="padding: 10px 30px; border-radius: 6px;">
+          Envoyer le message
+        </button>
+        <p style="font-size: 13px; margin-top: 10px;">Réponse sous 24h</p>
+      </div>
+
     </form>
 
   </div>
-</section><!-- Fin Section Contact -->
+</section>
 
   <div class="credits">
     cliquez <a href="demarche.html">ici</a>
